@@ -133,7 +133,7 @@ class Ultimate_Member_Discord_Add_On_Public {
 	public function ets_ultimatemember_discord_api_callback() {
 		if ( is_user_logged_in() ) {
 			$user_id = get_current_user_id();
-			if ( isset( $_GET['action'] ) && $_GET['action'] == 'discord-login' ) {
+			if ( isset( $_GET['action'] ) && $_GET['action'] == 'ultimate-discord' ) {
 				$params                    = array(
 					'client_id'     => sanitize_text_field( trim( get_option( 'ets_ultimatemember_discord_client_id' ) ) ),
 					'redirect_uri'  => sanitize_text_field( trim( get_option( 'ets_ultimatemember_discord_redirect_url' ) ) ),
